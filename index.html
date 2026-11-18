@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O Dinheiro que É Seu · Guia + Planilha pra MEI e quem vive de serviço</title>
+<meta name="description" content="Descubra quanto do dinheiro do seu negócio é seu de verdade. Guia + planilha com o método dos 4 Números. R$ 47, acesso imediato, garantia de 7 dias.">
+<meta property="og:title" content="O Dinheiro que É Seu · Guia + Planilha">
+<meta property="og:description" content="Você fatura, recebe Pix o mês inteiro e não sabe quanto pode tirar pra você? Os 4 Números mostram.">
+<meta property="og:image" content="https://odinheiroqueeseu.netlify.app/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- META PIXEL: cole aqui o código do Pixel quando ele for criado -->
+<style>
+:root{--g:#183D35;--g2:#21503F;--g3:#12302A;--gold:#C9A227;--gold2:#E2BE45;--cream:#F7F5EF;--mint:#CFE5D3;--ink:#1D2724;--muted:#5B6B66;--line:#E3E0D6;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.narrow{max-width:760px}
+section{padding:64px 0}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+h1{font-size:clamp(32px,5.4vw,54px);font-weight:800}
+h2{font-size:clamp(26px,3.8vw,38px);font-weight:800;margin-bottom:14px}
+h3{font-size:19px;font-weight:700;margin-bottom:6px}
+.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:640px}
+.tag{display:inline-block;background:var(--mint);color:var(--g);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:var(--g3);font-weight:800;font-size:18px;text-decoration:none;padding:18px 28px;border-radius:14px;box-shadow:0 8px 0 #9A7914,0 14px 30px rgba(0,0,0,.18);transition:transform .08s,box-shadow .08s;text-align:center}
+.btn:hover{transform:translateY(2px);box-shadow:0 6px 0 #9A7914,0 10px 22px rgba(0,0,0,.18)}
+.btn:active{transform:translateY(6px);box-shadow:0 2px 0 #9A7914}
+.micro{font-size:14px;color:var(--muted);margin-top:14px}
+.dark{background:var(--g);color:var(--cream)}
+.dark .lead,.dark .micro{color:#BFD6C6}
+.dark .tag{background:rgba(207,229,211,.15);color:var(--mint)}
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(24,61,53,.96);backdrop-filter:blur(8px);color:var(--cream)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;font-size:16px}
+.brand img{width:34px;height:34px;border-radius:50%}
+header .btn{font-size:14px;padding:10px 16px;box-shadow:0 4px 0 #9A7914;border-radius:10px}
+/* hero */
+.hero{background:radial-gradient(1200px 600px at 80% 0%,var(--g2),var(--g) 60%,var(--g3));color:var(--cream);padding:56px 0 72px}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero .lead{color:#C9DDD0;margin:18px 0 28px}
+.hero .micro{color:#A9C6B4}
+.hero .art{border-radius:22px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.card .ico{font-size:28px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:16px}
+/* split */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center}
+.split.rev .media{order:-1}
+.media img{max-width:min(440px,100%);width:100%;margin:0 auto;border-radius:22px;box-shadow:0 18px 40px rgba(24,61,53,.18)}
+.list{list-style:none;margin-top:18px;display:grid;gap:10px}
+.list li{display:flex;gap:10px;align-items:flex-start}
+.list li:before{content:"";flex:0 0 22px;height:22px;margin-top:2px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23183D35' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.dark .list li:before{background-color:rgba(207,229,211,.18);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23CFE5D3' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+/* numbers */
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0 10px}
+.num{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.num b{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--mint);color:var(--g);align-items:center;justify-content:center;font-size:15px;margin-bottom:10px}
+.num.last{background:var(--g);color:var(--cream);border-color:var(--g)}
+.num.last b{background:var(--gold);color:var(--g3)}
+.num span{display:block;font-size:14px;color:var(--muted)}
+.num.last span{color:#BFD6C6}
+/* conta bianca */
+.conta{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;margin-top:22px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line);font-size:17px}
+.row .v{font-weight:700;white-space:nowrap}
+.row.neg .v{color:#9A3B2E}
+.row.total{border:0;margin-top:8px;background:var(--g);color:var(--cream);border-radius:14px;padding:16px 18px;font-size:20px}
+.row.total .v{color:var(--gold2);font-size:24px}
+.fic{font-size:13px;color:var(--muted);margin-top:12px}
+/* para quem */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.box{border-radius:var(--r);padding:24px;background:#fff;border:1px solid var(--line)}
+.box.no{background:#FBF4EF;border-color:#EBD9CC}
+.box.no .list li:before{background:#F2DCD2 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 7l10 10M17 7L7 17' fill='none' stroke='%239A3B2E' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center/12px no-repeat}
+/* oferta */
+.offer{background:radial-gradient(900px 500px at 50% 0%,var(--g2),var(--g) 60%,var(--g3));color:var(--cream);text-align:center}
+.offer .panel{max-width:560px;margin:26px auto 0;background:rgba(255,255,255,.06);border:1px solid rgba(207,229,211,.22);border-radius:26px;padding:30px 24px}
+.offer .list{text-align:left;max-width:420px;margin:0 auto 24px}
+.price{font-size:clamp(44px,8vw,64px);font-weight:800;color:var(--gold2);letter-spacing:-.03em;line-height:1}
+.price small{font-size:20px;color:var(--cream);font-weight:600;letter-spacing:0}
+.inst{color:#BFD6C6;margin:6px 0 24px}
+.offer .btn{width:100%}
+.offer .lead,.offer .micro{color:#C9DDD0}
+.btn.big{font-size:20px;padding:22px 28px}
+.seals{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:14px;color:#BFD6C6}
+/* garantia */
+.guar{display:grid;grid-template-columns:120px 1fr;gap:26px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px}
+.seal{width:120px;height:120px;border-radius:50%;background:var(--g);color:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;border:6px solid var(--gold);font-weight:800;line-height:1}
+.seal b{font-size:44px;color:var(--gold2)}
+.seal span{font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+/* faq */
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:10px}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:22px;line-height:1;color:var(--g)}
+details[open] summary:after{content:"–"}
+details p{color:var(--muted);margin-top:10px}
+.cta-row{margin-top:30px}
+.cta-row .btn{min-width:300px}
+/* final */
+.final{text-align:center}
+footer{background:var(--g3);color:#9FBBAA;font-size:14px;padding:36px 0 110px}
+footer .wrap{display:grid;gap:10px}
+footer a{color:var(--mint)}
+/* sticky mobile cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(18,48,42,.97);display:none;align-items:center;gap:12px;transform:translateY(110%);transition:transform .25s}
+.sticky.on{transform:none}
+.sticky .p{color:var(--cream);font-size:14px;line-height:1.2}
+.sticky .p b{color:var(--gold2);font-size:18px}
+.sticky .btn{flex:1;font-size:16px;padding:14px 16px;box-shadow:0 4px 0 #9A7914}
+@media (max-width:860px){
+  section{padding:48px 0}
+  .hero{padding:36px 0 52px}
+  .hero .grid,.split{grid-template-columns:minmax(0,1fr);gap:28px}
+  .split.rev .media{order:0}
+  .cards{grid-template-columns:1fr}
+  .nums{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .guar{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .btn{width:100%}
+  header .btn{width:auto}
+  .sticky{display:flex}
+  .hide-m{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#topo"><img src="img/icone.png" alt="">O Dinheiro que É Seu</a>
+    <a class="btn cta" href="#oferta">Quero o meu</a>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero" id="topo">
+  <div class="wrap grid">
+    <div>
+      <span class="tag">Pra MEI e quem vive de serviço</span>
+      <h1>Você fatura, recebe Pix o mês inteiro… e <em>não sabe quanto é seu?</em></h1>
+      <p class="lead">O saldo do banco engana: mistura dinheiro de cliente, conta que vai vencer e a sua reserva. O método dos 4 Números mostra quanto você pode tirar pra você, sem apertar o negócio.</p>
+      <a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero organizar meu dinheiro · R$ 47</a>
+      <p class="micro">Acesso imediato · 15 minutos por semana · Garantia de 7 dias</p>
+    </div>
+    <div class="art"><img src="img/mockup.webp" alt="Guia O Dinheiro que É Seu no celular e planilha no tablet" width="1200" height="900"></div>
+  </div>
+</section>
+
+<!-- 2. PROBLEMA -->
+<section>
+  <div class="wrap">
+    <span class="tag">Parece familiar?</span>
+    <h2>Dinheiro entra. E no fim do mês, a dúvida continua.</h2>
+    <p class="lead">Não é falta de esforço. É que ninguém te mostrou uma conta simples pra separar o que é seu.</p>
+    <div class="cards">
+      <div class="card"><div class="ico">🏦</div><h3>O saldo que mente</h3><p>Tem R$ 1.800 na conta, mas metade já tem dono: aluguel, DAS, fornecedor.</p></div>
+      <div class="card"><div class="ico">😬</div><h3>Medo de tirar dinheiro pra você</h3><p>Tira e fica com medo de faltar. Não tira e o negócio vira trabalho sem salário.</p></div>
+      <div class="card"><div class="ico">⏱️</div><h3>Zero tempo pra planilha complicada</h3><p>Você não é contador. Precisa de algo que funcione em minutos, até no celular.</p></div>
+    </div>
+    <div class="cta-row" style="text-align:center"><a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero saber quanto é meu</a><p class="micro">R$ 47 ou 12x de R$ 4,86 · Garantia de 7 dias</p></div>
+  </div>
+</section>
+
+<!-- 3. MÉTODO -->
+<section style="background:#fff">
+  <div class="wrap split">
+    <div>
+      <span class="tag">O método</span>
+      <h2>4 números. Uma resposta: quanto é seu.</h2>
+      <p class="lead">Nada de contabilidade. Você responde 4 perguntas sobre o mês e a planilha faz o resto.</p>
+      <div class="nums">
+        <div class="num"><b>1</b><h3>Vendi</h3><span>Quanto serviço eu fiz?</span></div>
+        <div class="num"><b>2</b><h3>Recebi</h3><span>Quanto caiu na conta?</span></div>
+        <div class="num"><b>3</b><h3>Sobrou</h3><span>Quanto ficou depois das contas do negócio?</span></div>
+        <div class="num last"><b>4</b><h3>É meu</h3><span>Quanto dá pra tirar hoje?</span></div>
+      </div>
+      <p class="micro">Funciona com uma conta só. Não precisa abrir conta PJ.</p>
+    <div class="cta-row"><a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero o método dos 4 Números</a><p class="micro">R$ 47 ou 12x de R$ 4,86 · Garantia de 7 dias</p></div>
+    </div>
+    <div class="media hide-m"><img src="img/metodo.webp" alt="Os 4 números: Vendi, Recebi, Sobrou, É meu" width="1080" height="1350" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- 4. BIANCA -->
+<section>
+  <div class="wrap split rev">
+    <div>
+      <span class="tag">Na prática</span>
+      <h2>Bianca vendeu R$ 6.200. Podia tirar R$ 492,90.</h2>
+      <p class="lead">Bianca é esteticista. Agenda cheia, uma conta só. No fim do mês, tinha R$ 1.848,95 do negócio na conta. Parece muito, mas:</p>
+      <div class="conta">
+        <div class="row"><span>Dinheiro do negócio na conta</span><span class="v">R$ 1.848,95</span></div>
+        <div class="row neg"><span>Aluguel do estúdio, DAS e fornecedor (vencem em 30 dias)</span><span class="v">− R$ 1.236,05</span></div>
+        <div class="row neg"><span>Parte do mês da manutenção do aparelho</span><span class="v">− R$ 120,00</span></div>
+        <div class="row total"><span>É dela, livre</span><span class="v">R$ 492,90</span></div>
+        <p class="fic">E os R$ 700 que clientes ainda devem? Não contam até cair. · Exemplo fictício, usado no guia pra mostrar o método.</p>
+      </div>
+    <div class="cta-row"><a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero fazer essa conta com o meu negócio</a><p class="micro">R$ 47 ou 12x de R$ 4,86 · Garantia de 7 dias</p></div>
+    </div>
+    <div class="media hide-m"><img src="img/bianca.webp" alt="Exemplo da Bianca: vendeu R$ 6.200, pode tirar até R$ 492,90" width="1080" height="1350" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- 5. PLANILHA -->
+<section class="dark">
+  <div class="wrap split">
+    <div>
+      <span class="tag">A planilha</span>
+      <h2>Você anota. Ela faz a conta.</h2>
+      <p class="lead">Lançou o que entrou e o que saiu? O Painel mostra os 4 Números do mês na hora.</p>
+      <ul class="list">
+        <li>Google Sheets (até pelo celular) e Excel</li>
+        <li>Versão limpa + versão com o exemplo da Bianca preenchido</li>
+        <li>Separa sinal de serviço, contas futuras e sua reserva</li>
+        <li>Confere com o saldo do banco, pra você saber que está certo</li>
+        <li>Alerta do limite do MEI e relatório do mês pronto pra imprimir</li>
+      </ul>
+    <div class="cta-row"><a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero a planilha pronta</a><p class="micro">R$ 47 ou 12x de R$ 4,86 · Garantia de 7 dias</p></div>
+    </div>
+    <div class="media"><img src="img/planilha.webp" alt="Painel da planilha com os 4 números" width="1080" height="1350" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- 6. EBOOK -->
+<section>
+  <div class="wrap split rev">
+    <div>
+      <span class="tag">O guia</span>
+      <h2>Curto, feito pra ler no celular.</h2>
+      <p class="lead">8 capítulos curtos, com exemplos em números e uma tarefa prática no fim de cada um. Linguagem simples, sem termo técnico.</p>
+      <ul class="list">
+        <li>Por que nunca sobra, e como separar o seu do negócio numa conta só</li>
+        <li>Vendi não é recebi: o dinheiro que ainda não caiu</li>
+        <li>As contas que vêm aí: o que já tem dono (e o DAS, se você é MEI)</li>
+        <li>Quanto guardar pro mês fraco</li>
+        <li>Seu dia de tirar: quanto é seu, todo mês</li>
+      </ul>
+    <div class="cta-row"><a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero o guia + planilha</a><p class="micro">R$ 47 ou 12x de R$ 4,86 · Garantia de 7 dias</p></div>
+    </div>
+    <div class="media"><img src="img/ebook.webp" alt="Páginas do guia no celular" width="1080" height="1350" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- 7. KIT -->
+<section style="background:#fff">
+  <div class="wrap split">
+    <div>
+      <span class="tag">O que você recebe</span>
+      <h2>Tudo que vem no kit</h2>
+      <ul class="list">
+        <li><span><b>Guia em PDF</b> · o método dos 4 Números, com exemplos do dia a dia</span></li>
+        <li><span><b>Planilha</b> · Google Sheets e Excel, com exemplo preenchido e versão limpa</span></li>
+        <li><span><b>Bônus: Guia de largada do MEI</b> · abertura, DAS e quanto ter em caixa pra começar</span></li>
+        <li><span><b>Bônus: Checklist do mês</b> · o fechamento do mês numa página só</span></li>
+        <li><span><b>Bônus: Plano de 7 dias</b> · uma tarefa simples por dia pra começar</span></li>
+      </ul>
+      <div class="cta-row"><a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero o kit completo · R$ 47</a><p class="micro">ou 12x de R$ 4,86 · Acesso imediato</p></div>
+    </div>
+    <div class="media hide-m"><img src="img/kit.webp" alt="Lista do que vem no kit" width="1080" height="1350" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- 8. PRA QUEM É -->
+<section>
+  <div class="wrap narrow">
+    <span class="tag">Pra quem é</span>
+    <h2>Feito pra quem vive de serviço</h2>
+    <div class="two">
+      <div class="box">
+        <h3>É pra você se…</h3>
+        <ul class="list">
+          <li>É MEI, autônomo ou tem um pequeno negócio de serviço</li>
+          <li>Recebe por Pix, cartão ou dinheiro, muitas vezes numa conta só</li>
+          <li>Quer saber quanto pode tirar por mês sem apertar o negócio</li>
+          <li>Ainda não é MEI e quer começar organizado</li>
+        </ul>
+      </div>
+      <div class="box no">
+        <h3>Não é pra você se…</h3>
+        <ul class="list">
+          <li>Procura curso de contabilidade ou quer substituir o contador</li>
+          <li>Espera promessa de ganho rápido</li>
+          <li>Não vai separar 15 minutos por semana pra anotar o que entrou e saiu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cta-row" style="text-align:center"><a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">É pra mim, quero começar</a><p class="micro">R$ 47 ou 12x de R$ 4,86 · Garantia de 7 dias</p></div>
+  </div>
+</section>
+
+<!-- 9. OFERTA -->
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <span class="tag">Acesso imediato</span>
+    <h2>Comece hoje a saber quanto é seu</h2>
+    <div class="panel">
+      <ul class="list">
+        <li>Guia em PDF</li>
+        <li>Planilha (Google Sheets e Excel) com exemplo preenchido</li>
+        <li>Bônus: Guia de largada do MEI</li>
+        <li>Bônus: Checklist do mês + Plano de 7 dias</li>
+      </ul>
+      <div class="price"><small>R$</small> 47</div>
+      <p class="inst">à vista · ou 12x de R$ 4,86</p>
+      <a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero o meu agora</a>
+      <div class="seals"><span>🔒 Pagamento seguro pela Hotmart</span><span>⚡ Acesso por e-mail</span><span>🛡️ Garantia de 7 dias</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. GARANTIA -->
+<section>
+  <div class="wrap narrow">
+    <div class="guar">
+      <div class="seal"><b>7</b><span>dias</span></div>
+      <div>
+        <h2 style="font-size:28px">Garantia incondicional de 7 dias</h2>
+        <p class="lead">Abriu, testou a planilha com os seus números e achou que não é pra você? Peça o reembolso pela Hotmart em até 7 dias e receba 100% de volta. Sem pergunta.</p>
+        <div class="cta-row"><a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Testar sem risco por 7 dias</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FAQ -->
+<section style="padding-top:0">
+  <div class="wrap narrow">
+    <span class="tag">Dúvidas</span>
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Funciona pro meu tipo de serviço?</summary><p>Sim, se você vende serviço e recebe por Pix, cartão ou dinheiro: estética, beleza, manutenção, aulas, fotografia, consultoria, edição de vídeo e afins.</p></details>
+    <details><summary>Preciso saber Excel?</summary><p>Não. Você anota o que entrou e o que saiu, e a planilha faz as contas. Funciona no Google Sheets, inclusive pelo celular, e no Excel.</p></details>
+    <details><summary>Funciona com uma conta só?</summary><p>Sim. O método foi feito pra quem usa a mesma conta pro negócio e pra casa. Não precisa abrir conta PJ.</p></details>
+    <details><summary>Ainda não sou MEI. Serve pra mim?</summary><p>Serve. O método vale pra qualquer negócio de serviço, e o bônus Guia de largada do MEI mostra abertura, DAS e quanto ter em caixa pra começar.</p></details>
+    <details><summary>Como recebo o material?</summary><p>Por e-mail, logo depois da confirmação do pagamento. Pix e cartão liberam na hora; boleto, quando compensar.</p></details>
+    <details><summary>Substitui o contador?</summary><p>Não. É organização pra decidir com números. Imposto, nota fiscal e declarações continuam com o seu contador ou com os canais oficiais do governo.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias pra pedir o reembolso pela própria Hotmart e recebe 100% de volta.</p></details>
+    <p class="micro" style="text-align:center;margin-top:22px">Outra dúvida? Escreva pra <a href="mailto:suporte.odinheiroqueeseu@gmail.com">suporte.odinheiroqueeseu@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- 12. CTA FINAL -->
+<section class="offer final" id="final">
+  <div class="wrap narrow">
+    <span class="tag">Última chamada</span>
+    <h2>Pare de adivinhar. Saiba quanto é seu.</h2>
+    <p class="lead" style="margin:0 auto">Hoje à noite você já pode abrir a planilha e ver os seus 4 Números.</p>
+    <div class="panel">
+      <ul class="list">
+        <li>Você descobre quanto pode tirar sem apertar o negócio</li>
+        <li>15 minutos por semana, numa conta só</li>
+        <li>Guia + planilha + 3 bônus, acesso imediato</li>
+      </ul>
+      <div class="price"><small>R$</small> 47</div>
+      <p class="inst">à vista · ou 12x de R$ 4,86</p>
+      <a class="btn checkout big" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero organizar meu dinheiro agora</a>
+      <div class="seals"><span>🛡️ 7 dias de garantia, sem pergunta</span><span>🔒 Pagamento seguro pela Hotmart</span><span>⚡ Acesso por e-mail</span></div>
+    </div>
+    <p class="micro" style="margin-top:22px">Se em 7 dias você achar que não é pra você, recebe 100% de volta.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong style="color:var(--cream)">O Dinheiro que É Seu</strong>
+    <span>Dúvidas: <a href="mailto:suporte.odinheiroqueeseu@gmail.com">suporte.odinheiroqueeseu@gmail.com</a></span>
+    <span>Pagamento e entrega processados pela Hotmart. Personagens e valores usados nos exemplos são fictícios. Este material é educativo e não substitui orientação contábil, jurídica ou financeira individual.</span>
+    <span>Esta página não coleta seus dados. Se houver ferramentas de medição de anúncios (como o Pixel da Meta), elas registram apenas visitas e cliques de forma anônima.</span>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="p">R$ <b>47</b><br>ou 12x 4,86</div>
+  <a class="btn checkout" href="https://pay.hotmart.com/E108538282A?off=r23d943w">Quero o meu</a>
+</div>
+
+<script>
+// Repassa UTMs/src/sck do anúncio para o checkout (rastreamento de vendas por anúncio)
+(function(){
+  var q=new URLSearchParams(location.search), keep=new URLSearchParams();
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck','fbclid'].forEach(function(k){if(q.get(k))keep.set(k,q.get(k));});
+  if(!keep.get('src')&&q.get('utm_source'))keep.set('src',q.get('utm_source'));
+  var extra=keep.toString();
+  document.querySelectorAll('a.checkout').forEach(function(a){if(extra)a.href+= (a.href.indexOf('?')>-1?'&':'?')+extra;});
+  // barra fixa no celular aparece depois do topo
+  var s=document.getElementById('sticky'), hero=document.getElementById('topo'), offs=[document.getElementById('oferta'),document.getElementById('final')];
+  function chk(){var y=scrollY, h=hero.offsetHeight, vis=offs.some(function(e){var o=e.getBoundingClientRect(); return o.top<innerHeight && o.bottom>0;}); s.classList.toggle('on', y>h-80 && !vis);}
+  addEventListener('scroll',chk,{passive:true}); chk();
+})();
+</script>
+</body>
+</html>
