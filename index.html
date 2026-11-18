@@ -13,7 +13,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- META PIXEL: cole aqui o código do Pixel quando ele for criado -->
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1652883176580624');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'O Dinheiro que É Seu · Guia + Planilha',value:47,currency:'BRL'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1652883176580624&ev=PageView&noscript=1" alt=""></noscript>
+<!-- /Meta Pixel -->
 <style>
 :root{--g:#183D35;--g2:#21503F;--g3:#12302A;--gold:#C9A227;--gold2:#E2BE45;--cream:#F7F5EF;--mint:#CFE5D3;--ink:#1D2724;--muted:#5B6B66;--line:#E3E0D6;--r:18px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -393,7 +405,7 @@ footer a{color:var(--mint)}
   ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck','fbclid'].forEach(function(k){if(q.get(k))keep.set(k,q.get(k));});
   if(!keep.get('src')&&q.get('utm_source'))keep.set('src',q.get('utm_source'));
   var extra=keep.toString();
-  document.querySelectorAll('a.checkout').forEach(function(a){if(extra)a.href+= (a.href.indexOf('?')>-1?'&':'?')+extra;});
+  document.querySelectorAll('a.checkout').forEach(function(a){if(extra)a.href+= (a.href.indexOf('?')>-1?'&':'?')+extra; a.addEventListener('click',function(){try{window.fbq&&fbq('trackCustom','CliqueComprar',{value:47,currency:'BRL'});}catch(e){}});});
   // barra fixa no celular aparece depois do topo
   var s=document.getElementById('sticky'), hero=document.getElementById('topo'), offs=[document.getElementById('oferta'),document.getElementById('final')];
   function chk(){var y=scrollY, h=hero.offsetHeight, vis=offs.some(function(e){var o=e.getBoundingClientRect(); return o.top<innerHeight && o.bottom>0;}); s.classList.toggle('on', y>h-80 && !vis);}
